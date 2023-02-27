@@ -1,5 +1,6 @@
 from pynput import mouse
 
+
 class mouse_position:
     def __init__(self):
         self.listener = mouse.Listener(on_click=self.on_click)

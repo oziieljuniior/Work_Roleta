@@ -92,6 +92,7 @@ Cada arquivo tem sua funcionalidade e pode ser alterado futuramento, de acordo c
 	Observe que a ideia do projeto consistia em, implementar um código onde ele identificaria os números sorteados no jogo e a partir de um padrão de repetição de coluna, enviar um sinal ao usuário. Esse padrão de ajuste deve ser configurado pelo usuário. E se possível, implementar um código que realize o carregamento da aba do jogo no navegador.
 	
 	Dessa maneira, para a implementação desse projeto como um todo, o seu desenvolvimento foi
+
 1) Utilizar um código onde ele realiza a captura dos números sorteados
 2) Utilizar um código onde ele realiza a conversão do número sorteado e avise o usuário
 3) Utilizar um código que realiza o carregamento da aba do jogo no navegador
@@ -115,7 +116,7 @@ Cada arquivo tem sua funcionalidade e pode ser alterado futuramento, de acordo c
 	3) Verifique se a pasta data_teste/Numeros/ está vazia, caso seja necessário ajuste a pasta de acordo com a sua necessidade. Mas atenção, essa pasta deve estar vazia para cada reinicio do fire_0_1.py
 	4) Configurações iniciais ajustadas, você pode executar os três arquivos principais. Atenção para a ordem, caso queira realizar uma coleta fiel aos números sorteados. Isto é, execute o código fire_0_1.py antes do código fire_0_0.py. Não esqueça de executar o código hour_mouse.py para a movimentação do mouse na tela do jogo.
 	
-- Conclusões
+- Conclusões 
 
 	Para uma coleta fiel dos dados e conversão, é necessário realizar um treinamento com um banco de imagens grande, ou seja, precisamos de pelo menos 1 ou 2 dias de coleta dos números. Além disso, como estamos tentando automatizar esse processo, pode ser que o código de conversão não tenha uma acurácia fiel aos números coletados, por isso o arquivo reconhecimento foi criado e ele deve ser utilizado em projetos futuros.
 	

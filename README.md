@@ -23,20 +23,32 @@ Na versão de lançamento - 28/02/2023. O diretório do trabalho consiste em 12 
 12) requerimentos.txt
 
 Cada arquivo tem sua funcionalidade e pode ser alterado futuramento, de acordo com o decorrer do trabalho. Segue uma explicação breve sobre:
+
 1) Data1/
+
 	Este arquivo foi elaborado inicialmente como data_teste, contudo, ao realizar a atualização dos códigos, o seu nome foi mudado para data1. E ele existe porque é o primeiro conjunto de imagens coletado do site de aposta. Além disso, ele pode servir para treinamento e estudo de casos futuros.
+
 2) Data2/
+
 	De maneira análoga ao Data1/, o arquivo foi utilizado como data_teste e em comparação ao primeiro arquivo, o Data2/ vem com algumas atualizações dentro do seu diretório que deve ser utilizado em todas as coletas futuras. Sua estrutura interna foi dividida em:
+	
 	1) Numero_Tratado/
 	2) Numeros/
 	3) Numeros_Gerais/
+	
 	Esses três arquivos tem a sua funcionalidade explicada a partir do código elaborado no trabalho. E eles consistem em, 1) tratamento das imagens coletadas, 2) imagens coletadas e 3) verificação das imagens coletadas. 
+
 3) data_teste/
+
 	Este arquivo é utilizado para coleta mútua dos números sorteados na roleta, seu desenvolvimento tem a mesma estrutua do arquivo Data2/ e é nele que os códigos restantes vão estar se baseando em eventuais sinais de sequência de números.
+
 4) pictures/
+
 	No decorrer do trabalho são realzidas algumas amostras de fotos do seu desenvolvimento, assim, nesse arquivo ficam localizados todos os ensaios, alertas, avisos, caracteristicas, visualização de padrões e outros. 
 5) python_project/
+
 	Arquivo principal do projeto, sua estrutura interna é dividida em:
+
 	1) Reconhecimento/
 	2) att.mp3
 	3) class_mouse_position.py
@@ -44,20 +56,35 @@ Cada arquivo tem sua funcionalidade e pode ser alterado futuramento, de acordo c
 	5) fire_0_1.py
 	6) get_colors.py
 	7) hour_mouse.py
+	
 	Os códigos do 3) ~ 7) são utilizados de acordo com a proposta do trabalho. E os arquivos 1) e 2) são para trabalho de reconhecimento de caracteres em imagens e música de alerta respectivamente. Em seguida, estarei detalhando como utilizar esses códigos para trabalho de coleta e análise dos números.
+	
 6) search/
+	
 	Esse arquivo é suporte do arquivo do python_project e nele estão salvos imagens do arquivo fire_0_0.py. Estas, organizam e estruturam o código como um todo.
+	
 7) gitattributes
+
 	Arquivo suporte para upload do projeto direto do pc.
+	
 8) gitignore
+
 	Arquivo suporte para upload do projeto direto do pc.
+	
 9) python-version
+
 	arquivo que identifica a versão do python utilizada para desenvolvimento do trabalho
+	
 10) LICENSE
+
 	copyright do projeto
+	
 11) README.md
+
 	Arquivo onde podemos estruturar o relatório
+	
 12) requerimentos.txt
+
 	Arquivo das bibliotecas utilizadas no projeto
 	
 - Explicação dos códigos

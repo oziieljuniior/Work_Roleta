@@ -60,28 +60,38 @@ Cada arquivo tem sua funcionalidade e pode ser alterado futuramento, de acordo c
 12) requerimentos.txt
 	Arquivo das bibliotecas utilizadas no projeto
 	
-## Explicação dos códigos
+- Explicação dos códigos
+
 	Observe que a ideia do projeto consistia em, implementar um código onde ele identificaria os números sorteados no jogo e a partir de um padrão de repetição de coluna, enviar um sinal ao usuário. Esse padrão de ajuste deve ser configurado pelo usuário. E se possível, implementar um código que realize o carregamento da aba do jogo no navegador.
-	Dessa maneira, para a implementação desse projeto como um todo, o seu desenvolvimento foi
-	1) Utilizar um código onde ele realiza a captura dos números sorteados
-	2) Utilizar um código onde ele realiza a conversão do número sorteado e avise o usuário
-	3) Utilizar um código que realiza o carregamento da aba do jogo no navegador
-	Assim, os arquivos principais podem ser identificados como
-	1) fire_0_0.py
-	2) fire_0_1.py
-	3) hour_mouse.py
-	E os arquivos secundários são
-	1*) att.mp3
-	2*) class_mouse_position.py
-	3*) get_colors.py
-	Então, para a utilização dos códigos, você pode realizar a seguinte estrutura:
-	1º) Ao realizar o inicio da coleta, verificar se as posições estão e cores estão sendo identificadas com o código get_colors.py. Caso seja necessário um ajuste, utilize o arquivo class_mouse_position.py para capturar a posição do mouse na tela.
-	2º) Em seguida, verifique se os cliques em tela do arquivo hour_mouse.py estão funcionando, coso seja necessário um ajuste, utilize o aquivo class_mouse_position.py para capturar a posição do mouse na tela.
-	3º) Verifique se a pasta data_teste/Numeros/ está vazia, caso seja necessário ajuste a pasta de acordo com a sua necessidade. Mas atenção, essa pasta deve estar vazia para cada reinicio do fire_0_1.py
-	4º) Configurações iniciais ajustadas, você pode executar os três arquivos principais. Atenção para a ordem, caso queira realizar uma coleta fiel aos números sorteados. Isto é, execute o código fire_0_1.py antes do código fire_0_0.py. Não esqueça de executar o código hour_mouse.py para a movimentação do mouse na tela do jogo.
 	
-## Conclusões
+	Dessa maneira, para a implementação desse projeto como um todo, o seu desenvolvimento foi
+1) Utilizar um código onde ele realiza a captura dos números sorteados
+2) Utilizar um código onde ele realiza a conversão do número sorteado e avise o usuário
+3) Utilizar um código que realiza o carregamento da aba do jogo no navegador
+
+	Assim, os arquivos principais podem ser identificados como
+
+1. fire_0_0.py
+2. fire_0_1.py
+3. hour_mouse.py
+
+	E os arquivos secundários são
+	
+	1) att.mp3
+	2) class_mouse_position.py
+	3) get_colors.py
+	
+	Então, para a utilização dos códigos, você pode realizar a seguinte estrutura:
+	
+	1) Ao realizar o inicio da coleta, verificar se as posições estão e cores estão sendo identificadas com o código get_colors.py. Caso seja necessário um ajuste, utilize o arquivo class_mouse_position.py para capturar a posição do mouse na tela.
+	2) Em seguida, verifique se os cliques em tela do arquivo hour_mouse.py estão funcionando, coso seja necessário um ajuste, utilize o aquivo class_mouse_position.py para capturar a posição do mouse na tela.
+	3) Verifique se a pasta data_teste/Numeros/ está vazia, caso seja necessário ajuste a pasta de acordo com a sua necessidade. Mas atenção, essa pasta deve estar vazia para cada reinicio do fire_0_1.py
+	4) Configurações iniciais ajustadas, você pode executar os três arquivos principais. Atenção para a ordem, caso queira realizar uma coleta fiel aos números sorteados. Isto é, execute o código fire_0_1.py antes do código fire_0_0.py. Não esqueça de executar o código hour_mouse.py para a movimentação do mouse na tela do jogo.
+	
+- Conclusões
+
 	Para uma coleta fiel dos dados e conversão, é necessário realizar um treinamento com um banco de imagens grande, ou seja, precisamos de pelo menos 1 ou 2 dias de coleta dos números. Além disso, como estamos tentando automatizar esse processo, pode ser que o código de conversão não tenha uma acurácia fiel aos números coletados, por isso o arquivo reconhecimento foi criado e ele deve ser utilizado em projetos futuros.
+	
 	Ademais, qualquer atualização e ajuste deve ser comunicado previamente nos altos. Também, algumas reuniões devem ser realizadas para explicação do projeto como um todo.
 	
 	

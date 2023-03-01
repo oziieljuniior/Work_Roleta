@@ -10,7 +10,7 @@ from playsound import playsound
 #from openpyxl import Workbook
 
 path_original = '/home/oziel/Documentos/Alunos/Derick/Work_Roleta/data_teste/Numeros'
-path_salvo = '/home/oziel/Documentos/Alunos/Derick/Work_Roleta/data_teste/Numero_Tratado'
+#path_salvo = '/home/oziel/Documentos/Alunos/Derick/Work_Roleta/data_teste/Numero_Tratado'
 
 i = 1
 add_numeros = []
@@ -30,13 +30,13 @@ while i <= t_0:
         time.sleep(2)
         name = path_original + '/' + str(i) + 'img.png'
         
-        img1 = Image.open(name)
-        area = (10,5,40,35)
-        corte = img1.crop(area)
-        name1 = path_salvo + '/' + str(i) + 'img.png'
-        corte.save(name1,'png')
+        #img1 = Image.open(name)
+        #area = (10,5,40,35)
+        #corte = img1.crop(area)
+        #name1 = path_salvo + '/' + str(i) + 'img.png'
+        #corte.save(name1,'png')
         
-        imagem = cv.imread(name1)
+        imagem = cv.imread(name)
         gray = cv.cvtColor(imagem, cv.COLOR_BGR2GRAY)
         #thresh = cv.threshold(gray, 0, 255, cv.THRESH_BINARY_INV + cv.THRESH_OTSU)[1]
         
@@ -67,27 +67,31 @@ while i <= t_0:
         
         a = text10.split('\n\x0c')
         if a[0] == '271':
-            b = a.replace('271','27')
+            b = a[0].replace('271','27')
             a = b
         elif a[0] == 'Ws':
-            b = a.replace('Ws','17')
+            b = a[0].replace('Ws','17')
             a = b
-        bad = [',','.']
+        elif a[0] == 'oF':
+            b = a[0].replace('oF','9')
+            a[0] = b
+        bad = [',','.','(']
         for j in bad:
             b = a[0].replace(j,'')
-            a = b
-        print(a)
-        add_numeros.append(int(a))
+            a[0] = b
+        print(a[0])
+        add_numeros.append(int(a[0]))
         
-        if int(a) % 3 == 0 and int(a) != 0:
+        
+        if int(a[0]) % 3 == 0 and int(a[0]) != 0:
             m += 1
             n = 0
             o = 0
-        elif int(a) % 3 == 1:
+        elif int(a[0]) % 3 == 1:
             m = 0
             n += 1
             o = 0
-        elif int(a) % 3 == 2:
+        elif int(a[0]) % 3 == 2:
             m = 0
             n = 0
             o += 1
@@ -96,7 +100,14 @@ while i <= t_0:
             n = 0
             o = 0
         
+        print('Coluna1 (resto0): ', m, 'Numero: ', a[0])
+        print('Coluna2 (Resto1): ', n, 'Numero: ', a[0])
+        print('Coluna3 (Resto2): ', o, 'Numero: ', a[0])
+        
         if m == sound or n == sound or o == sound:
+            m = 0
+            n = 0
+            o = 0
             print('encontrei um numero')
             playsound('/home/oziel/Documentos/Alunos/Derick/Work_Roleta/python_project/att.mp3')
         

@@ -10,7 +10,9 @@ while i <= 100:
     #img.show()
     #999 494
     #1023 495
-    area0 = (1023, 495, 1024, 496)
+    #1026 523
+    #1027 510
+    area0 = (1027, 510, 1028,511)
     corte0 = img.crop(area0)
     corte0.save('/home/oziel/Documentos/Alunos/Derick/Work_Roleta/search/img1.png','png')
     img_0 = Image.open('/home/oziel/Documentos/Alunos/Derick/Work_Roleta/search/img1.png')
@@ -20,8 +22,8 @@ while i <= 100:
     #[(1, (206, 180, 125))] or gg == [(1, (205, 179, 124))]
     #[(1, (202, 176, 122))] or [(1, (204, 178, 124))] or [(1, (203, 177, 123))]
     #[(1, (204, 178, 123))] [(1, (206, 180, 125))]
-    #[(1, (203, 177, 122))]
-    if gg == [(1, (204, 178, 123))] or gg == [(1, (203, 177, 122))]:
+    #[(1, (203, 177, 122))] [(1, (203, 177, 123))]
+    if gg == [(1, (203, 177, 123))] or gg == [(1, (202, 176, 122))] or gg == [(1, (204, 178, 124))]:
         print("Cor localizada")
         print(i)
         i += 1
